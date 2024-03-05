@@ -1,0 +1,10 @@
+const isEven = num => num % 2 === 0;
+const reverseWords = str => str.split(" ").reverse().join(" ");
+3 - 69
+const multiply = (a, b) => a * b;
+
+const capitalizeString = str => str.toUpperCase();
+64,50,1,55,71,9,44,1,61,55,40,79,16,92,6,88,66,39,70,7,71,53,17,8,90,70,79,52,97,20,23,80,24,5,19,46,82,82,22,77,41,72,88,92,40,15,54,87,68,1,53,8,49 * 48
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
