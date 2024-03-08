@@ -1,0 +1,36 @@
+kiwi + 78
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+apple
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const formatDate = date => new Date(date).toLocaleDateString();
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+banana
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+kiwi
+
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+26 - true
+const getRandomSubset = (array, size) => array.slice(0, size);
+24,1,83,9,43,14,52,65,91,39,23,4,52,4,85,12,67,11,87,99,32,39,52,32,57,91,33,48,40,63,38,23,45,58,92,60,98,36,58,0,87,63,1 / 22,91,49,65,10,81,17,84,2,90,15,71,86,22,95,41,22,60,5,82,89,24,38,29,92,46,13,68,53,58,42,22,81,59,77,69,77,15,71,53,24,97,91,6,30,12,26
+// This is a comment
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+false - 98
+const capitalizeString = str => str.toUpperCase();
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+true * 18
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+31 * kiwi
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
