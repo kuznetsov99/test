@@ -1,0 +1,5 @@
+const capitalizeString = str => str.toUpperCase();
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+grape
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
