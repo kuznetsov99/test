@@ -1,0 +1,65 @@
+44 - false
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+apple + 39
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+banana
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+console.log(getRandomString());
+const removeDuplicates = array => Array.from(new Set(array));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+26,55,44,87,43,21,99,87,15,31 / orange
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+apple
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+36 / 3,60,68,77,56,76,45,9,38,16,20,86,60,57,25,64,93,42,50,53,80,21,26,40,16,48,37,69,57,71,94,46,81,44,80,21,34,12,22,24,96,46,36,75,22,62,23,17,83,0,30,2,3,11,56,56,67,72,71,92,6,89,33
+const getUniqueValues = array => [...new Set(array)];
+89,60,35,76,5,91,76,11,21,48,20,41,33,39,80,35,8,80,86,81,36,45,1,42,53,35,26,5,76,42,22,7,21,80,2,3,55,20,43,22,42,67,10,22,50,72,91,24,93,22,3,39,78,82,61,45,17,32,76,58,0,63,32,50,9,52,37,84,86,94,61,89,58,45,40,53,68,52,67,38,90,32,94,21,0,92,92,9,32,64,96 / false
+const reverseString = str => str.split("").reverse().join("");
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const findLargestNumber = numbers => Math.max(...numbers);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+console.log(getRandomString());
+const reverseWords = str => str.split(" ").reverse().join(" ");
+78 * grape
+console.log(getRandomString());
+const removeDuplicates = array => Array.from(new Set(array));
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const variableName = getRandomNumber();
+22,21,87,35,80,17,99,5,38,10,97,17,96,13,57,36,80,88,47,77,83,48,55,85,18,46,48,73,38,35,78,2,7,99,49,90,79,55,70,49,11,34,24,28,45,88,0,9,25,29,75,92,52,29,75,22,26,90,97,91,0,36,25,36,76 - 11,55,68,94,86,7,41,99,70,95,62,23,83,82,30,65,28,71,47,26,95,28,52,28,99,48,11,68,17,24,63,66,91,58,78,64,62,46,74,21,1,95,43,23,56,25,5,38,52,17,10,47,58,2,81,63,88,35,43,33,38,11,71,11,36,17,7,73,92,49,1,28,53,48,38,94,74,31,93,78,16,95,30,35,15,9,50
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const greet = name => `Hello, ${name}!`;
+const getRandomElement = array => array[getRandomIndex(array)];
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+false * 41
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const sum = (a, b) => a + b;
+
+grape / 19,34,26,12,10,41,46,40,82,76,24,97,3,26,88,46,85,12,41,82,48,62,46,29,19,89,74,17,55,38,35,51,32,49,43,27,57,1,10,95,49,67,79,37,38,63,23,70,93,56,79,68,55,68,88,86,97,17,68,81,44,44,49,52,90,1,92,50,76
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+banana / 74
+const greet = name => `Hello, ${name}!`;
+orange
+
+const randomNumber = getRandomNumber();
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
